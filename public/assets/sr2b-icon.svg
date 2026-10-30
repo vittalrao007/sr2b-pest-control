@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGradSq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#183247" />
+      <stop offset="50%" stop-color="#102332" />
+      <stop offset="100%" stop-color="#09141D" />
+    </linearGradient>
+    <linearGradient id="bronzeGradSq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA7E" />
+      <stop offset="50%" stop-color="#C3A16A" />
+      <stop offset="100%" stop-color="#8F6B38" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100" height="100" rx="20" fill="#183247" />
+  
+  <!-- Shield Emblem -->
+  <g transform="translate(0, 0)">
+    <path d="M 50,12 C 76,12 88,18 88,36 C 88,68 53,88 50,90 C 47,88 12,68 12,36 C 12,18 24,12 50,12 Z" 
+          fill="url(#bronzeGradSq)" />
+    
+    <path d="M 50,15 C 73,15 84,20 84,36 C 84,65 52,84 50,86 C 48,84 16,65 16,36 C 16,20 27,15 50,15 Z" 
+          fill="url(#shieldGradSq)" />
+
+    <text x="50" y="54" font-family="'Manrope', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.05em">
+      SR2B
+    </text>
+    <text x="50" y="68" font-family="'Manrope', sans-serif" font-weight="700" font-size="7.5" fill="#DFBA7E" text-anchor="middle" letter-spacing="0.12em">
+      PEST CONTROL
+    </text>
+  </g>
+</svg>

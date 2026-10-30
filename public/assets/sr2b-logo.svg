@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#183247" />
+      <stop offset="50%" stop-color="#102332" />
+      <stop offset="100%" stop-color="#09141D" />
+    </linearGradient>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA7E" />
+      <stop offset="50%" stop-color="#C3A16A" />
+      <stop offset="100%" stop-color="#8F6B38" />
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Logo Mark (Shield Emblem) -->
+  <g transform="translate(15, 10)">
+    <!-- Shield Outer Rim with Bronze Gradient -->
+    <path d="M 50,0 C 78,0 95,8 95,28 C 95,68 54,95 50,98 C 46,95 5,68 5,28 C 5,8 22,0 50,0 Z" 
+          fill="url(#bronzeGrad)" filter="url(#subtleShadow)" />
+    
+    <!-- Shield Inner Body (Deep Navy) -->
+    <path d="M 50,4 C 75,4 90,11 90,29 C 90,65 53,90 50,93 C 47,90 10,65 10,29 C 10,11 25,4 50,4 Z" 
+          fill="url(#shieldGrad)" />
+
+    <!-- Shield Gloss Overlay -->
+    <path d="M 50,4 C 75,4 90,11 90,29 C 90,52 65,72 50,80 L 50,4 Z" 
+          fill="url(#metalGrad)" />
+
+    <!-- Subtle Shield Center Divider Line -->
+    <line x1="50" y1="12" x2="50" y2="82" stroke="#A98250" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.6" />
+
+    <!-- Pest Control Graphics / Pest Emblem inside Shield -->
+    <!-- Stylized Bug/Pest Silhouette in Bronze -->
+    <g transform="translate(50, 48)">
+      <!-- Antennae -->
+      <path d="M -4,-22 Q -12,-30 -16,-26" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      <path d="M 4,-22 Q 12,-30 16,-26" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      
+      <!-- Pest Head -->
+      <ellipse cx="0" cy="-18" rx="4.5" ry="3.5" fill="url(#bronzeGrad)" />
+      
+      <!-- Thorax -->
+      <path d="M -6,-14 C -7,-14 -7,-7 0,-7 C 7,-7 7,-14 6,-14 Z" fill="url(#bronzeGrad)" />
+      
+      <!-- Abdomen Segments -->
+      <ellipse cx="0" cy="2" rx="7.5" ry="12" fill="url(#bronzeGrad)" />
+      <!-- Abdomen Segment Striations -->
+      <line x1="-6" y1="-2" x2="6" y2="-2" stroke="#102332" stroke-width="1.2" />
+      <line x1="-7" y1="2" x2="7" y2="2" stroke="#102332" stroke-width="1.2" />
+      <line x1="-6" y1="6" x2="6" y2="6" stroke="#102332" stroke-width="1.2" />
+
+      <!-- Insect Legs (3 pairs) -->
+      <!-- Left Legs -->
+      <path d="M -5,-12 Q -14,-16 -18,-10" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      <path d="M -6,-6 Q -17,-4 -20,6" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      <path d="M -6,2 Q -15,10 -16,20" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      <!-- Right Legs -->
+      <path d="M 5,-12 Q 14,-16 18,-10" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      <path d="M 6,-6 Q 17,-4 20,6" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+      <path d="M 6,2 Q 15,10 16,20" stroke="#DFBA7E" stroke-width="1.8" fill="none" stroke-linecap="round" />
+
+      <!-- Universal Shield Ban / Protection Ring -->
+      <circle cx="0" cy="0" r="23" stroke="#DFBA7E" stroke-width="2.2" fill="none" opacity="0.85" />
+      <line x1="-16" y1="16" x2="16" y2="-16" stroke="#DFBA7E" stroke-width="2.2" opacity="0.85" />
+    </g>
+  </g>
+
+  <!-- Typography: SR2B Wordmark -->
+  <g transform="translate(130, 20)">
+    <!-- SR2B Main Heading -->
+    <text x="0" y="46" font-family="'Manrope', 'Inter', system-ui, sans-serif" font-weight="800" font-size="44" fill="#183247" letter-spacing="0.04em">
+      SR2B
+    </text>
+
+    <!-- Subtitle: PEST CONTROL SERVICES -->
+    <text x="1" y="70" font-family="'Manrope', 'Inter', system-ui, sans-serif" font-weight="700" font-size="14" fill="#A98250" letter-spacing="0.22em">
+      PEST CONTROL SERVICES
+    </text>
+
+    <!-- Bronze Accent Horizontal Rule -->
+    <rect x="1" y="80" width="310" height="2" fill="url(#bronzeGrad)" rx="1" />
+  </g>
+</svg>

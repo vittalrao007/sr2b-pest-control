@@ -1,0 +1,1677 @@
+# PROJECT: SR2B PEST CONTROL — PROFESSIONAL BUSINESS WEBSITE
+
+Act as a senior full-stack developer, UI/UX designer, conversion optimization specialist, and software architect.
+
+Your task is to design and develop a complete, professional, modern, responsive, production-ready website for a pest control business named **SR2B Pest Control**.
+
+This must be a functioning website, not just a static design or a landing-page mockup.
+
+The website must include an easy-to-use **Config button** that opens a configuration dashboard. This dashboard must allow the business owner to customize the website's business information, contact details, services, pricing, branding, and other important content without manually editing source code.
+
+Prioritize a premium visual design, customer trust, mobile usability, lead generation, maintainable code, and straightforward business management.
+
+Do not stop after generating a homepage. Build all the required pages, interactions, configuration functionality, and supporting components.
+
+---
+
+# 1. BUSINESS IDENTITY AND BRANDING
+
+Business name: SR2B Pest Control
+
+Business category: Professional pest control and pest management services.
+
+Primary market: India.
+
+The exact operating city, address, contact numbers, and service areas will be supplied through the configuration dashboard.
+
+## Logo requirements
+
+I will provide an image file containing the official SR2B Pest Control logo.
+
+Use the supplied logo as the authoritative branding asset.
+
+The logo contains:
+- A shield-shaped emblem.
+- Pest illustrations inside the shield.
+- The SR2B wordmark.
+- The text "PEST CONTROL SERVICES".
+- A combination of dark navy blue, bronze, and metallic neutral tones.
+
+Use the uploaded image file:
+
+`ranga pest service logo.jpeg`
+
+The uploaded logo should be used for the following purposes:
+
+1. Website header logo.
+2. Footer logo.
+3. Browser favicon.
+4. Mobile navigation branding.
+5. Website metadata and social sharing previews where appropriate.
+
+### Important logo implementation instructions
+
+- Do not recreate, redraw, distort, or replace the supplied logo.
+- Preserve its original proportions.
+- Avoid stretching the logo to fit containers.
+- Display it against a suitable light background so the branding remains visible.
+- Use `object-fit: contain`.
+- If necessary, create a clean, square favicon derived from the supplied logo while preserving the shield emblem and recognizable branding.
+- Generate appropriate favicon formats and sizes if the development environment supports it.
+- Keep the original logo file in the project assets.
+- Use the exact same branding consistently throughout the website.
+
+If the image has excessive empty space around the logo, create a carefully cropped derivative for website use without altering the logo artwork itself.
+
+Do not use a generic pest control icon in place of the supplied logo.
+
+---
+
+# 2. DESIGN DIRECTION
+
+Create a premium, trustworthy, professional pest control website.
+
+The design should communicate:
+
+- Safety.
+- Reliability.
+- Professionalism.
+- Hygiene.
+- Experience.
+- Effective pest management.
+- Customer satisfaction.
+
+Avoid an outdated, cluttered, generic local-business template.
+
+The website should feel like a professionally designed service-business website with strong branding and clear calls to action.
+
+## Color palette
+
+Use the supplied logo as the primary source of brand colors.
+
+Suggested palette:
+
+- Primary navy: `#183247`
+- Deep navy: `#102332`
+- Bronze: `#A98250`
+- Light bronze: `#C3A16A`
+- Warm off-white: `#F8F6F1`
+- White: `#FFFFFF`
+- Main text: `#263442`
+- Secondary text: `#66727D`
+- Light section background: `#F1F3F4`
+- Success green: `#218653`
+- Border color: `#E0E5E9`
+
+These colors are initial defaults. They must be editable through the configuration dashboard.
+
+Use navy for primary buttons, navigation accents, headings, and important elements.
+
+Use bronze sparingly for highlights, separators, decorative elements, icons, and premium branding details.
+
+Use white and warm off-white backgrounds to maintain readability.
+
+Avoid excessive gradients, unnecessary shadows, overly rounded components, and excessive animations.
+
+## Typography
+
+Use a professional, readable typography system.
+
+Recommended fonts:
+- Headings: Manrope or a similar modern sans-serif.
+- Body text: Inter or a similar highly readable sans-serif.
+
+Use a consistent type scale for:
+- Main headings.
+- Section headings.
+- Card headings.
+- Body text.
+- Captions.
+- Buttons.
+- Form labels.
+
+Maintain comfortable line heights and sufficient contrast.
+
+## Visual assets
+
+Use high-quality, relevant images showing:
+- Professional pest control technicians.
+- Clean residential environments.
+- Commercial buildings.
+- Pest inspection.
+- Pest prevention and treatment.
+- Clean kitchens and hygienic workplaces.
+
+Use appropriate images of cockroaches, termites, rodents, ants, mosquitoes, bed bugs, and other pests in service sections where relevant.
+
+Do not use graphic, disturbing, or unnecessarily close-up pest imagery.
+
+Do not use the logo as a substitute for all other images.
+
+Keep images visually consistent throughout the website.
+
+Use local project assets where practical. If remote images are used, ensure they have stable sources and sensible fallbacks.
+
+Never fabricate business certifications, licenses, customer reviews, years of experience, or claims of guaranteed results.
+
+---
+
+# 3. TECHNICAL STACK
+
+Use the following stack unless the development environment requires a comparable alternative.
+
+Frontend:
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+- React Router.
+- Lucide React icons.
+
+Backend:
+- Node.js.
+- Express.
+
+Database:
+- PostgreSQL for persistent configuration and business data.
+
+Authentication:
+- Secure authentication for the configuration dashboard.
+
+Deployment:
+- Use a deployment-compatible architecture.
+- Store secrets in environment variables.
+- Include an `.env.example` file.
+- Never hardcode database credentials, authentication secrets, or API keys.
+
+If the platform provides a managed database, authentication, or serverless backend, use the platform's supported equivalent rather than introducing unnecessary infrastructure.
+
+If the environment is strictly frontend-only, implement a functional local configuration mode using browser storage and clearly structure the code so persistent backend storage can be added later.
+
+Do not pretend browser storage provides secure multi-user authentication or cross-device synchronization.
+
+Use reusable React components, clean project structure, TypeScript types, and centralized configuration management.
+
+Do not put the entire website into a single enormous component.
+
+---
+
+# 4. WEBSITE STRUCTURE
+
+Create the following pages and sections.
+
+## A. HOME PAGE
+
+Route: `/`
+
+The homepage must be the primary lead-generation page.
+
+### Section 1: Announcement bar
+
+Create a slim announcement bar above the main navigation.
+
+It should support configurable content such as:
+
+"Professional Pest Control for Homes & Businesses"
+
+Optionally display:
+- Emergency service availability.
+- Phone number.
+- Service availability.
+- A short promotional message.
+
+All announcement bar content and visibility must be configurable.
+
+Do not claim 24/7 availability unless explicitly enabled and confirmed by the business owner.
+
+### Section 2: Main navigation
+
+Create a responsive navigation bar containing:
+
+Left:
+- Official SR2B Pest Control logo.
+
+Center or right:
+- Home.
+- About Us.
+- Services.
+- Residential Pest Control.
+- Commercial Pest Control.
+- Service Areas.
+- Contact.
+
+Additional elements:
+- Prominent "Get a Free Quote" button.
+- Config button for the authorized website administrator.
+
+The navigation should remain clean and readable on desktop and mobile.
+
+On mobile, use a hamburger menu with an accessible open/close interaction.
+
+The menu must close after selecting a navigation item.
+
+The header must not overflow on narrow screens.
+
+### Section 3: Hero section
+
+Design a visually impressive hero section with a two-column layout on desktop.
+
+Left column:
+- Small trust-oriented eyebrow label.
+- Main headline.
+- Supporting description.
+- Primary call-to-action button.
+- Secondary call-to-action button.
+- Optional trust indicators.
+
+Suggested headline:
+
+"Reliable Pest Control for a Cleaner, Safer Space"
+
+Suggested supporting text:
+
+"Professional pest management solutions for homes and businesses. Get the right treatment for your pest problem with service tailored to your needs."
+
+Primary button:
+"Get a Free Quote"
+
+Secondary button:
+"Call Us Now"
+
+On mobile, stack the content vertically and keep the primary call to action visible without requiring excessive scrolling.
+
+Right column:
+- High-quality pest control service photograph or a carefully designed image composition.
+- Optional small information card describing a key service benefit.
+- Subtle decorative branding elements.
+
+The hero must be configurable through the dashboard, including its heading, description, image, buttons, and trust indicators.
+
+Do not use fabricated numerical claims such as "10,000+ customers" or "20+ years of experience."
+
+### Section 4: Trust and benefits strip
+
+Create a row of four benefits.
+
+Suggested benefits:
+
+- Professional Service.
+- Tailored Treatment Plans.
+- Residential & Commercial Solutions.
+- Prevention-Focused Approach.
+
+Use simple icons and short descriptions.
+
+All benefits should be editable.
+
+### Section 5: About the company
+
+Heading:
+
+"Your Trusted Partner in Pest Management"
+
+Include:
+- A short company introduction.
+- An image of professional pest control work.
+- A description of the company's approach.
+- Three or four configurable benefits.
+- A "Learn More" button linking to the About page.
+
+Do not invent the company's founding year, qualifications, experience, certifications, or staff size.
+
+Use editable placeholder content until the owner provides verified information.
+
+### Section 6: Our services
+
+Display service cards in a responsive grid.
+
+Include the following default services:
+
+1. Cockroach Control.
+2. Termite Control.
+3. Bed Bug Treatment.
+4. Rodent Control.
+5. Ant Control.
+6. Mosquito Control.
+7. General Household Pest Control.
+8. Commercial Pest Management.
+
+Each card should contain:
+- Service image or icon.
+- Service name.
+- Brief description.
+- "Learn More" link.
+- "Request Service" button.
+
+Each service should have its own detail page or a configurable service-detail route.
+
+Service cards must be generated from configuration data rather than hardcoded separately into the homepage.
+
+The business owner must be able to add, edit, reorder, hide, and delete services from the dashboard.
+
+### Section 7: Why choose SR2B Pest Control?
+
+Create a visually distinctive section explaining the business's service philosophy.
+
+Suggested points:
+- Customized pest management plans.
+- Clear communication.
+- Attention to hygiene and prevention.
+- Solutions for residential and commercial properties.
+- Customer-focused service.
+- Responsible treatment practices.
+
+Avoid unsupported statements such as "100% pest-free guaranteed," "completely chemical-free," or "the number one pest control company."
+
+Use honest, configurable messaging.
+
+### Section 8: How our service works
+
+Create a four-step process.
+
+Step 1: Tell Us About the Problem.
+
+Step 2: Schedule an Inspection or Consultation.
+
+Step 3: Receive a Suitable Treatment Plan.
+
+Step 4: Follow Prevention and Aftercare Guidance.
+
+Use icons and short explanations.
+
+The process must be configurable.
+
+Do not imply that an inspection is free unless the business owner has enabled and confirmed that offer.
+
+### Section 9: Residential pest control
+
+Create a dedicated promotional section for homeowners and tenants.
+
+Explain that the service can help address common household pest problems.
+
+Include:
+- Kitchen and bathroom pest problems.
+- Bedroom and furniture pests.
+- Termite concerns.
+- Rodent problems.
+- Preventive pest management.
+
+CTA:
+"Get a Home Pest Control Quote"
+
+### Section 10: Commercial pest control
+
+Create a dedicated section for business customers.
+
+Potential customer categories:
+- Offices.
+- Restaurants.
+- Retail stores.
+- Warehouses.
+- Apartment buildings.
+- Other commercial properties.
+
+Explain the importance of hygiene, preventive measures, and pest management planning.
+
+CTA:
+"Request a Commercial Consultation"
+
+Do not claim that the business meets specific regulatory standards unless verified.
+
+### Section 11: Service area section
+
+Display the locations where the business operates.
+
+Include:
+- Service area heading.
+- Short introduction.
+- Configurable list of cities, neighborhoods, and districts.
+- Optional map or location illustration.
+- CTA to check service availability.
+
+Initially use a clear placeholder such as:
+
+"Update your service areas from the Config dashboard."
+
+Never invent a business address or claim service availability in a location without confirmation.
+
+Allow the owner to configure:
+- Primary operating city.
+- State.
+- Neighborhoods.
+- Additional service cities.
+- Areas temporarily unavailable.
+
+### Section 12: Customer testimonials
+
+Create a testimonial section with attractive review cards.
+
+Each testimonial may include:
+- Customer display name.
+- Review text.
+- Rating.
+- Service category.
+- Date, if available.
+
+Use sample content only when clearly identified as demonstration content.
+
+Do not fabricate real customer reviews or imply that placeholder reviews are authentic.
+
+The dashboard must allow the business owner to add, edit, publish, hide, and delete testimonials.
+
+If no verified testimonials exist, hide the testimonial section or display a configurable alternative such as "Our Service Commitment."
+
+### Section 13: Frequently asked questions
+
+Create an accordion FAQ section.
+
+Suggested questions:
+
+- Which pests do you treat?
+- Do you provide residential and commercial services?
+- How can I request a quotation?
+- How long does a treatment take?
+- Do I need to leave my home during treatment?
+- Are follow-up visits available?
+- Which areas do you serve?
+- How can I prepare for a pest control appointment?
+
+Answers should be informative but must not make universal safety claims.
+
+For treatment-related questions, explain that preparation, precautions, and re-entry instructions depend on the pest, treatment method, product label, and technician's guidance.
+
+Allow the business owner to edit all questions and answers.
+
+### Section 14: Final call-to-action banner
+
+Create a prominent CTA section.
+
+Suggested heading:
+
+"Ready to Take Control of Your Pest Problem?"
+
+Suggested description:
+
+"Tell us what you're dealing with, and we'll help you find the right pest management solution."
+
+Buttons:
+- Request a Quote.
+- Contact Us.
+
+### Section 15: Footer
+
+Include:
+- Official logo.
+- Short business description.
+- Quick links.
+- Services.
+- Contact information.
+- Business address, if supplied.
+- Service areas.
+- Business hours.
+- Phone number.
+- WhatsApp contact.
+- Email.
+- Social media links.
+- Privacy Policy.
+- Terms of Service.
+
+Every item must be configurable.
+
+Hide contact details that have not been provided instead of displaying invented information.
+
+Include the copyright year dynamically.
+
+---
+
+# 5. ABOUT PAGE
+
+Route: `/about`
+
+Create a dedicated About Us page containing:
+
+- Page hero.
+- Company introduction.
+- Mission and service philosophy.
+- Values.
+- Residential and commercial service capabilities.
+- Service approach.
+- Contact CTA.
+
+Do not invent a company history.
+
+The business owner should be able to edit the page heading, descriptions, mission, values, and images through the configuration dashboard.
+
+---
+
+# 6. SERVICES PAGE
+
+Route: `/services`
+
+Display all published services.
+
+Include:
+- Page heading.
+- Introductory description.
+- Service search or category filters if useful.
+- Responsive service card grid.
+- Quote request CTA.
+
+Every service card must be generated from the service configuration.
+
+Create individual service detail pages.
+
+Suggested routes:
+
+- `/services/cockroach-control`
+- `/services/termite-control`
+- `/services/bed-bug-treatment`
+- `/services/rodent-control`
+- `/services/ant-control`
+- `/services/mosquito-control`
+- `/services/household-pest-control`
+- `/services/commercial-pest-management`
+
+Generate these routes dynamically from service slugs wherever possible.
+
+Each detail page should contain:
+- Service-specific hero.
+- Overview.
+- Common signs of the pest problem.
+- How the service works.
+- Prevention tips.
+- Frequently asked questions.
+- Related services.
+- Quote request form.
+
+Allow each service to have its own image, description, optional starting price, SEO title, and SEO description.
+
+Prices should be hidden when not configured.
+
+Never imply that a displayed starting price is a guaranteed final price.
+
+---
+
+# 7. CONTACT PAGE
+
+Route: `/contact`
+
+Create a complete contact page.
+
+Include:
+- Business contact information.
+- Business hours.
+- Service area information.
+- Phone contact button.
+- WhatsApp contact button.
+- Email contact button.
+- Quote request form.
+- Map or location section when a valid address is configured.
+
+## Quote request form
+
+Fields:
+- Full name.
+- Phone number.
+- Email address, optional.
+- City or locality.
+- Property type: Residential or Commercial.
+- Pest problem.
+- Preferred appointment date, optional.
+- Preferred time, optional.
+- Description of the problem.
+- Consent to the applicable privacy notice.
+
+Validation requirements:
+- Name is required.
+- Phone number is required.
+- Validate phone number format appropriately.
+- Validate email format when supplied.
+- Require the location field.
+- Require a pest problem selection or description.
+- Display understandable validation errors.
+- Show a success message after a successful submission.
+
+Do not display a success message before the submission has actually succeeded.
+
+## Form submission
+
+Implement a real submission flow.
+
+When a backend is available:
+- Validate data on the server.
+- Store submissions in the database.
+- Record the submission timestamp.
+- Provide an authenticated dashboard view for enquiries.
+- Add spam protection and basic rate limiting.
+- Keep customer information private.
+- Provide configurable notification settings.
+
+Do not expose private customer enquiries through public APIs.
+
+If no backend is configured, implement an explicitly identified demonstration mode or a functional WhatsApp enquiry fallback.
+
+Never silently discard submissions.
+
+---
+
+# 8. WHATSAPP AND CLICK-TO-CALL INTEGRATION
+
+WhatsApp should be one of the primary conversion channels.
+
+Add:
+- Floating WhatsApp button.
+- WhatsApp button in the header or hero.
+- WhatsApp option on service cards.
+- WhatsApp option on the contact page.
+- Optional WhatsApp CTA in the footer.
+
+The WhatsApp number must be configurable.
+
+Construct WhatsApp links using the international phone number format without spaces or punctuation.
+
+Generate a prefilled message based on the selected service.
+
+Example:
+
+"Hello SR2B Pest Control, I would like to know more about your cockroach control service. Please contact me."
+
+If the customer starts from the general contact button, use a general enquiry message.
+
+Also implement click-to-call buttons using the configured telephone number.
+
+Hide the WhatsApp button when no valid WhatsApp number is configured.
+
+Hide click-to-call buttons when no valid phone number is configured.
+
+Do not hardcode the business's contact number anywhere in the source code.
+
+---
+
+# 9. THE MOST IMPORTANT FEATURE: CONFIG BUTTON
+
+Implement a clearly visible **Config** button that allows the business owner to customize the website.
+
+This must be a real, working configuration system.
+
+It must not be a decorative button that opens a dummy modal.
+
+## 9.1 Config button placement
+
+Place a small, professional Config button in the website header when the current user is an authenticated administrator.
+
+The button should include a settings icon.
+
+On clicking the button, open the configuration dashboard.
+
+Use the following route:
+
+`/admin/config`
+
+Alternatively, use a settings drawer for quick access while retaining the full configuration dashboard.
+
+The configuration interface must be fully responsive.
+
+Do not expose administrative controls to ordinary visitors.
+
+Never rely only on hiding the Config button to protect administrative data. Enforce authentication and authorization on the server when a backend is available.
+
+For a local demonstration, clearly explain that the configuration is not protected by production-grade authentication.
+
+## 9.2 Authentication
+
+Implement a secure administrator login.
+
+Suggested route:
+
+`/admin/login`
+
+Requirements:
+- Email and password login.
+- Secure password handling.
+- Protected administrative routes.
+- Logout.
+- Session expiration.
+- Server-side authorization for administrative operations.
+- Secure session or token handling appropriate to the selected architecture.
+- Rate limiting for login attempts.
+- No hardcoded production passwords.
+- No administrator credentials committed to source control.
+
+Use the backend or managed authentication provider where available.
+
+Provide setup instructions for creating the first administrator account.
+
+Do not create a public registration form that allows arbitrary users to become administrators.
+
+## 9.3 Configuration dashboard layout
+
+Create a clean admin interface with:
+
+- Sidebar navigation on desktop.
+- Collapsible navigation on mobile.
+- Main content panel.
+- Clear section headings.
+- Save Changes button.
+- Preview Changes button.
+- Reset option with confirmation.
+- Success and error notifications.
+- Unsaved changes warning.
+- Loading indicators.
+- Form validation.
+
+Organize the dashboard into these tabs.
+
+### TAB 1: Business Information
+
+Editable fields:
+- Business name.
+- Short business name.
+- Business description.
+- Tagline.
+- Primary operating city.
+- State.
+- Country.
+- Business address.
+- Postal code.
+- Business email.
+- Primary phone number.
+- Secondary phone number.
+- WhatsApp number.
+- Business hours.
+- Google Maps URL.
+- Google Business Profile URL.
+- Business registration or license details, if applicable and supplied.
+
+Changes should update the website automatically.
+
+### TAB 2: Branding and Appearance
+
+Editable fields:
+- Primary color.
+- Secondary color.
+- Accent color.
+- Background color.
+- Heading color.
+- Body text color.
+- Button color.
+- Button text color.
+- Logo.
+- Favicon.
+- Font preference.
+- Button border radius.
+- General visual style.
+
+Provide color pickers and hexadecimal input fields.
+
+Show a live preview of the selected colors.
+
+Allow the owner to upload a replacement logo.
+
+Validate uploaded files and provide appropriate size limits.
+
+Update the website logo and favicon when the logo changes.
+
+Do not distort the logo.
+
+### TAB 3: Homepage Content
+
+Editable fields:
+- Announcement bar text.
+- Announcement bar visibility.
+- Hero eyebrow text.
+- Hero heading.
+- Hero description.
+- Hero background or image.
+- Primary CTA label.
+- Primary CTA destination.
+- Secondary CTA label.
+- Secondary CTA destination.
+- Trust indicators.
+- About section heading.
+- About section description.
+- Benefits section heading.
+- Process section heading.
+- Residential section content.
+- Commercial section content.
+- Final CTA heading.
+- Final CTA description.
+- Visibility of homepage sections.
+
+Allow the owner to hide or show individual homepage sections.
+
+### TAB 4: Services Management
+
+Provide complete CRUD functionality.
+
+CRUD means:
+- Create.
+- Read.
+- Update.
+- Delete.
+
+For each service, allow the owner to configure:
+- Service name.
+- URL slug.
+- Short description.
+- Full description.
+- Service image.
+- Icon.
+- Optional starting price.
+- Pricing unit.
+- Optional promotional label.
+- Visibility.
+- Homepage featured status.
+- Sort order.
+- SEO title.
+- SEO description.
+- Service FAQs.
+
+The interface must support:
+- Adding a new service.
+- Editing an existing service.
+- Deleting a service with confirmation.
+- Publishing or hiding a service.
+- Reordering services.
+- Featuring a service on the homepage.
+- Previewing a service detail page.
+
+Deleting a service must not break navigation or crash the homepage.
+
+### TAB 5: Service Areas
+
+Allow the owner to:
+- Set the primary city.
+- Add neighborhoods.
+- Add additional cities.
+- Add districts or regions.
+- Edit location names.
+- Hide locations.
+- Delete locations.
+- Reorder locations.
+- Add location-specific descriptions.
+- Optionally associate services with locations.
+
+Only published service areas should appear on the public website.
+
+Do not automatically generate false claims of coverage.
+
+### TAB 6: Pricing and Offers
+
+Allow the owner to configure:
+- Whether pricing is displayed publicly.
+- Service-specific starting prices.
+- Pricing units.
+- Promotional offers.
+- Offer descriptions.
+- Offer start and end dates.
+- Offer visibility.
+
+Support Indian rupee formatting.
+
+Use `₹` for INR.
+
+Do not display prices or discounts that have not been configured.
+
+When pricing is unavailable, use a "Request a Quote" CTA.
+
+### TAB 7: Testimonials and Reviews
+
+Allow the owner to:
+- Add a testimonial.
+- Edit a testimonial.
+- Delete a testimonial.
+- Publish or hide a testimonial.
+- Enter the customer's display name.
+- Add the review text.
+- Select a rating.
+- Associate a service.
+- Enter an optional date.
+
+Do not fabricate testimonials.
+
+Clearly distinguish manually entered testimonials from verified third-party reviews.
+
+Only show the testimonial section when appropriate content is available.
+
+### TAB 8: FAQ Management
+
+Allow the owner to:
+- Add questions.
+- Edit questions.
+- Edit answers.
+- Delete entries.
+- Reorder entries.
+- Publish or hide entries.
+- Associate FAQs with individual services.
+
+### TAB 9: Contact and Social Media
+
+Editable fields:
+- Primary phone.
+- Secondary phone.
+- WhatsApp number.
+- Email.
+- Address.
+- Business hours.
+- Google Maps link.
+- Instagram URL.
+- Facebook URL.
+- YouTube URL.
+- LinkedIn URL.
+- Other supported social links.
+
+Hide social icons for links that have not been configured.
+
+Validate URL formats before saving.
+
+### TAB 10: Website Settings and SEO
+
+Editable fields:
+- Website title.
+- Website description.
+- Homepage SEO title.
+- Homepage SEO description.
+- Default social sharing image.
+- Favicon.
+- Canonical website URL.
+- Indexing preference.
+- Google Analytics measurement ID, optional.
+- Google Search Console verification value, optional.
+
+Implement:
+- Appropriate page titles.
+- Meta descriptions.
+- Open Graph metadata.
+- Semantic HTML.
+- XML sitemap where supported.
+- Robots.txt.
+- Canonical URLs when a production domain is configured.
+- LocalBusiness structured data using verified business information.
+
+Never invent an address, review rating, business hours, or license number for structured data.
+
+Do not insert analytics scripts when no valid measurement ID is configured.
+
+### TAB 11: Enquiries
+
+If a backend database is available, create an enquiry management section.
+
+Display:
+- Customer name.
+- Phone number.
+- Email.
+- Location.
+- Property type.
+- Pest problem.
+- Message.
+- Preferred appointment.
+- Submission date.
+- Status.
+
+Allow the administrator to:
+- View enquiry details.
+- Mark an enquiry as New, Contacted, In Progress, or Closed.
+- Search enquiries.
+- Filter by status.
+- Sort by submission date.
+- Export enquiry data to CSV.
+- Delete enquiries with confirmation.
+
+Protect this section using authentication and authorization.
+
+Do not expose enquiries publicly.
+
+If the website is running without a backend, explain that persistent enquiry management requires backend setup.
+
+### TAB 12: Configuration Backup
+
+Provide:
+- Export configuration as JSON.
+- Import a valid configuration JSON file.
+- Validate imported configuration.
+- Preview changes before applying them.
+- Restore default demo configuration after confirmation.
+
+Never overwrite the live configuration silently.
+
+Preserve existing data if an import fails.
+
+---
+
+# 10. CONFIGURATION PERSISTENCE
+
+Configuration changes must persist beyond a page refresh.
+
+Do not implement a configuration interface that merely changes temporary React state and loses all changes on reload.
+
+Use a centralized configuration architecture.
+
+Create a strongly typed configuration model.
+
+Suggested structure:
+
+- business
+- branding
+- navigation
+- announcementBar
+- homepage
+- services
+- serviceAreas
+- pricing
+- testimonials
+- faqs
+- contact
+- socialLinks
+- seo
+- integrations
+
+Implement a centralized configuration service or API.
+
+All public website components must read their data from this configuration source.
+
+Avoid duplicating the same phone number, business description, color, or service information in multiple components.
+
+Use a single source of truth.
+
+### Persistence strategy
+
+When a backend is available:
+- Store the website configuration in the database.
+- Load it when the application starts.
+- Allow authenticated administrators to update it.
+- Validate configuration updates.
+- Handle failed saves.
+- Display the current save status.
+- Prevent unauthorized changes.
+
+For the initial project, create a complete default configuration object so the website renders correctly before the owner has customized it.
+
+If a frontend-only version is required, use localStorage for basic local persistence and document its limitations.
+
+Do not imply that localStorage automatically synchronizes configuration across devices.
+
+### Save behavior
+
+When the administrator clicks "Save Changes":
+
+1. Validate the current form.
+2. Display understandable validation errors if necessary.
+3. Save the configuration to the selected persistence layer.
+4. Confirm successful persistence.
+5. Update the website preview.
+6. Update the public website using the saved configuration.
+7. Preserve changes after refresh.
+
+Do not report a successful save when the save operation fails.
+
+### Preview behavior
+
+Provide a preview mechanism so the owner can inspect changes before publishing them.
+
+Where feasible:
+- Support desktop preview.
+- Support tablet preview.
+- Support mobile preview.
+
+Clearly distinguish unsaved changes from published changes if a draft/publish workflow is implemented.
+
+---
+
+# 11. DEFAULT WEBSITE CONFIGURATION
+
+Create a centralized default configuration for SR2B Pest Control.
+
+Suggested initial values:
+
+Business name:
+SR2B Pest Control
+
+Tagline:
+Professional Pest Control Services
+
+Primary color:
+#183247
+
+Accent color:
+#A98250
+
+Background:
+#F8F6F1
+
+Default currency:
+INR
+
+Default language:
+English
+
+Default country:
+India
+
+Services:
+- Cockroach Control.
+- Termite Control.
+- Bed Bug Treatment.
+- Rodent Control.
+- Ant Control.
+- Mosquito Control.
+- Household Pest Control.
+- Commercial Pest Management.
+
+Default CTA:
+Get a Free Quote
+
+Default secondary CTA:
+Contact Us
+
+Default contact information:
+Empty until supplied.
+
+Default service areas:
+Empty until supplied.
+
+Default prices:
+Hidden until supplied.
+
+Default testimonials:
+Empty until authentic reviews are provided.
+
+Default business hours:
+Unconfigured until supplied.
+
+Do not fabricate business details to make the website look complete.
+
+The design should remain professional even when some information is missing.
+
+---
+
+# 12. RESPONSIVE DESIGN
+
+The website must work correctly on:
+
+- Small mobile phones.
+- Large mobile phones.
+- Tablets.
+- Laptops.
+- Desktop monitors.
+- Wide desktop displays.
+
+Use a mobile-first implementation approach.
+
+Test at approximately these viewport widths:
+
+- 320 px.
+- 375 px.
+- 430 px.
+- 768 px.
+- 1024 px.
+- 1440 px.
+
+Ensure:
+- No horizontal overflow.
+- No overlapping content.
+- No clipped text.
+- No broken navigation.
+- No excessively wide text blocks.
+- Proper image scaling.
+- Appropriate spacing.
+- Comfortable touch targets.
+- Readable mobile forms.
+- Responsive configuration dashboard.
+
+On mobile, prioritize:
+- Click-to-call.
+- WhatsApp enquiries.
+- Quote requests.
+- Simple navigation.
+
+A visitor should be able to contact the business easily without hunting through the page.
+
+---
+
+# 13. ACCESSIBILITY
+
+Implement accessible interactions throughout the website.
+
+Requirements:
+- Semantic HTML.
+- Correct heading hierarchy.
+- Keyboard-accessible navigation.
+- Visible focus indicators.
+- Labels for all form inputs.
+- Accessible accordion controls.
+- Accessible dialog and menu behavior.
+- Meaningful alternative text for informative images.
+- Sufficient color contrast.
+- Error messages associated with the relevant form fields.
+- Appropriate ARIA attributes when necessary.
+
+Do not use color alone to communicate an error or success state.
+
+Respect reduced-motion preferences.
+
+---
+
+# 14. PERFORMANCE
+
+Optimize the website for speed and reliability.
+
+Implement:
+- Optimized images.
+- Lazy loading for below-the-fold images.
+- Responsive image sizing.
+- Code splitting where useful.
+- Minimal unnecessary dependencies.
+- Efficient React rendering.
+- Reusable components.
+- Sensible caching.
+- Error boundaries where appropriate.
+- Loading states for asynchronous data.
+
+Avoid unnecessary animation libraries and oversized background videos.
+
+Do not sacrifice mobile performance for visual effects.
+
+---
+
+# 15. SECURITY AND DATA VALIDATION
+
+Implement appropriate security practices.
+
+Requirements:
+- Server-side validation for important operations.
+- Authentication for administrator functionality.
+- Authorization for configuration changes.
+- Secure password hashing through a trusted authentication system.
+- Environment variables for secrets.
+- Rate limiting for sensitive endpoints.
+- Safe handling of user-generated content.
+- Parameterized database queries or a secure ORM.
+- Upload validation.
+- Protection against unauthorized administrative operations.
+- Sensible error messages that do not leak secrets.
+- Privacy-conscious handling of enquiry information.
+
+Never store plain-text administrator passwords.
+
+Never expose database credentials in frontend code.
+
+Never put secret API keys into public environment variables.
+
+Do not rely on client-side validation as the only security mechanism.
+
+If the selected platform supplies managed authentication and storage, use the supported security model rather than implementing a weaker custom alternative.
+
+---
+
+# 16. SEARCH ENGINE OPTIMIZATION
+
+Optimize the website for relevant local searches.
+
+Potential keyword themes include:
+- Pest control services.
+- Residential pest control.
+- Commercial pest management.
+- Cockroach control.
+- Termite control.
+- Bed bug treatment.
+- Rodent control.
+- Pest control in the configured city.
+
+Do not target a city until the business owner configures the correct location.
+
+Implement:
+- Unique page titles.
+- Relevant meta descriptions.
+- Semantic heading structure.
+- Descriptive image alt text.
+- Internal linking.
+- Canonical URLs when appropriate.
+- Sitemap.
+- Robots.txt.
+- Open Graph metadata.
+- Local business structured data based on verified details.
+- Fast mobile page loading.
+
+Avoid keyword stuffing.
+
+Do not create hundreds of low-quality location pages automatically.
+
+---
+
+# 17. CONVERSION OPTIMIZATION
+
+The website should make it easy for visitors to become customers.
+
+Use clear, consistent CTAs.
+
+Primary conversion actions:
+- Request a Quote.
+- Call the Business.
+- WhatsApp Enquiry.
+- Submit a Contact Form.
+
+Display appropriate CTAs:
+- In the navigation.
+- In the hero.
+- After service listings.
+- On individual service pages.
+- In residential and commercial sections.
+- On the contact page.
+- In the footer.
+
+On mobile, consider a compact sticky bottom action bar with:
+- Call.
+- WhatsApp.
+- Get a Quote.
+
+The sticky bar must not obscure page content, forms, or cookie notices.
+
+Allow the owner to enable or disable the sticky bar.
+
+Avoid fake countdowns, fabricated scarcity, deceptive discounts, and misleading urgency.
+
+---
+
+# 18. PROJECT STRUCTURE
+
+Organize the project into maintainable modules.
+
+Suggested structure:
+
+src/
+  app/
+    App.tsx
+    router.tsx
+
+  components/
+    layout/
+      Header.tsx
+      Footer.tsx
+      Navigation.tsx
+      MobileNavigation.tsx
+
+    home/
+      HeroSection.tsx
+      TrustBar.tsx
+      AboutSection.tsx
+      ServicesSection.tsx
+      BenefitsSection.tsx
+      ProcessSection.tsx
+      ResidentialSection.tsx
+      CommercialSection.tsx
+      ServiceAreasSection.tsx
+      TestimonialsSection.tsx
+      FAQSection.tsx
+      FinalCTASection.tsx
+
+    services/
+      ServiceCard.tsx
+      ServiceGrid.tsx
+      ServiceDetailLayout.tsx
+
+    forms/
+      QuoteRequestForm.tsx
+      ContactForm.tsx
+
+    common/
+      Button.tsx
+      SectionHeading.tsx
+      WhatsAppButton.tsx
+      CallButton.tsx
+      Accordion.tsx
+      LoadingState.tsx
+      ErrorMessage.tsx
+
+  pages/
+    HomePage.tsx
+    AboutPage.tsx
+    ServicesPage.tsx
+    ServiceDetailPage.tsx
+    ResidentialPage.tsx
+    CommercialPage.tsx
+    ServiceAreasPage.tsx
+    ContactPage.tsx
+    PrivacyPolicyPage.tsx
+    TermsPage.tsx
+    NotFoundPage.tsx
+
+  admin/
+    AdminLoginPage.tsx
+    AdminLayout.tsx
+    ConfigDashboard.tsx
+    tabs/
+      BusinessInfoTab.tsx
+      BrandingTab.tsx
+      HomepageTab.tsx
+      ServicesTab.tsx
+      ServiceAreasTab.tsx
+      PricingTab.tsx
+      TestimonialsTab.tsx
+      FAQTab.tsx
+      ContactSocialTab.tsx
+      SEOTab.tsx
+      EnquiriesTab.tsx
+      BackupTab.tsx
+
+  config/
+    defaultConfig.ts
+    configSchema.ts
+    configTypes.ts
+    configService.ts
+
+  hooks/
+    useSiteConfig.ts
+
+  lib/
+    api.ts
+    validation.ts
+    seo.ts
+    whatsapp.ts
+
+  styles/
+    globals.css
+
+public/
+  assets/
+    sr2b-logo.jpeg
+
+  favicon.ico
+
+server/
+  routes/
+  middleware/
+  services/
+  db/
+
+Also include:
+- `README.md`
+- `.gitignore`
+- `.env.example`
+- Database schema or migrations.
+- Setup instructions.
+- Deployment instructions.
+- Administrator account setup instructions.
+
+You may adjust this structure where appropriate, but maintain clear separation between public website components, configuration logic, administration, and backend services.
+
+Do not create empty files merely to match this structure. Implement the actual functionality required by the project.
+
+---
+
+# 19. TESTING REQUIREMENTS
+
+Before considering the project complete, verify the important user flows.
+
+## Public website tests
+
+- Homepage loads successfully.
+- All navigation links work.
+- Logo displays correctly.
+- Favicon is configured.
+- Service cards load from configuration.
+- Service detail pages work.
+- Contact page works.
+- Quote form validates its inputs.
+- Call buttons use the configured number.
+- WhatsApp buttons use the configured number.
+- Missing contact details are handled gracefully.
+- Mobile navigation works.
+- Footer links work.
+
+## Configuration dashboard tests
+
+- Login works.
+- Unauthorized users cannot access protected administrative data.
+- Config button opens the correct dashboard.
+- Business information can be edited.
+- Branding colors can be changed.
+- Logo can be updated.
+- Homepage content can be edited.
+- Services can be created and edited.
+- Services can be published and hidden.
+- Service areas can be managed.
+- Pricing can be updated.
+- FAQs can be edited.
+- Testimonials can be managed.
+- Contact information can be updated.
+- Changes persist after refresh.
+- The public website reflects saved changes.
+- Invalid data is rejected with clear errors.
+- Configuration backup can be exported.
+- Configuration import is validated.
+- Failed saves do not falsely report success.
+
+## Responsive tests
+
+Verify:
+- No horizontal scrolling at 320 px.
+- No overlapping header elements.
+- Forms remain usable on mobile.
+- Configuration controls remain accessible.
+- Buttons have comfortable touch targets.
+- Images scale appropriately.
+
+Fix issues discovered during testing instead of merely listing them in the README.
+
+---
+
+# 20. REQUIRED DELIVERABLES
+
+Build and deliver:
+
+1. A complete responsive public website.
+2. A professional homepage.
+3. About page.
+4. Services listing page.
+5. Individual service detail pages.
+6. Residential pest control page.
+7. Commercial pest control page.
+8. Service areas page.
+9. Contact and quote request page.
+10. Privacy policy and terms pages.
+11. Custom 404 page.
+12. Secure administrator login where supported.
+13. Functional Config dashboard.
+14. Persistent configuration management.
+15. Business information editor.
+16. Branding and logo editor.
+17. Homepage content editor.
+18. Services management interface.
+19. Service area management.
+20. Pricing management.
+21. Testimonials management.
+22. FAQ management.
+23. Contact and social media configuration.
+24. SEO configuration.
+25. Enquiry management where a backend is available.
+26. Configuration import and export.
+27. Responsive layouts.
+28. Form validation and error handling.
+29. Working phone and WhatsApp integrations.
+30. README with setup and deployment instructions.
+31. `.env.example`.
+32. `.gitignore`.
+33. Database setup or migration files where applicable.
+
+---
+
+# 21. IMPLEMENTATION RULES
+
+Follow these rules throughout development.
+
+1. Do not stop at a visual mockup.
+2. Do not create a nonfunctional Config button.
+3. Do not hardcode business contact information in multiple components.
+4. Do not use fabricated reviews or business credentials.
+5. Do not replace the supplied logo with a generic logo.
+6. Do not use fake links that lead nowhere.
+7. Do not show prices unless they are configured.
+8. Do not claim successful form submission when the operation fails.
+9. Do not claim that localStorage provides secure production authentication.
+10. Do not expose administrative data to ordinary visitors.
+11. Do not expose secrets in frontend code.
+12. Do not create unnecessary dependencies.
+13. Do not sacrifice mobile responsiveness.
+14. Do not leave important buttons without working actions.
+15. Do not leave major pages unfinished.
+16. Do not silently discard configuration changes.
+17. Do not generate false service-area information.
+18. Do not add fabricated numerical claims or guarantees.
+19. Do not stop after generating the first version.
+20. Run the application, test its important flows, and fix the errors you find.
+
+When information is missing, use editable defaults and clearly identified placeholders.
+
+Make sensible implementation decisions without repeatedly asking for information that can be configured later.
+
+---
+
+# 22. FINAL ACCEPTANCE CRITERIA
+
+The project is complete only when the following conditions are satisfied.
+
+A visitor can:
+- Understand what SR2B Pest Control offers.
+- Browse available services.
+- Learn about the business.
+- Check the configured service areas.
+- Request a quotation.
+- Contact the business through available channels.
+- Use the website comfortably on a mobile device.
+
+The business owner can:
+- Log in to the administrator interface.
+- Click the Config button.
+- Change the business details.
+- Change the website's colors and branding.
+- Replace the logo.
+- Edit homepage content.
+- Add and remove services.
+- Change service descriptions and prices.
+- Update service areas.
+- Add authentic testimonials.
+- Edit FAQs.
+- Change phone and WhatsApp numbers.
+- Update business hours.
+- Manage enquiries when backend support is configured.
+- Export and import website configuration.
+- Save changes without manually editing code.
+- See those changes reflected on the public website.
+- Retain saved changes after refreshing the page.
+
+The website must be visually polished, responsive, maintainable, secure within the capabilities of its architecture, and practical for a real business to operate.
+
+## Final instruction
+
+Begin by establishing the project structure and analyzing the supplied SR2B Pest Control logo.
+
+Then implement the complete website, configuration system, data model, and required integrations.
+
+Run the project and verify its functionality.
+
+If an external service requires credentials, explain exactly which environment variables must be supplied and provide a sensible development fallback without exposing secrets.
+
+Do not claim that a feature is complete unless it actually works.
+
+The final result should be a website that SR2B Pest Control can customize and maintain without requiring a developer for routine content changes.

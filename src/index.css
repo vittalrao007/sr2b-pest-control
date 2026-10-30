@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --primary-navy: #183247;
+  --deep-navy: #102332;
+  --bronze: #A98250;
+  --light-bronze: #C3A16A;
+  --warm-bg: #F8F6F1;
+  --text-main: #263442;
+  --text-muted: #66727D;
+  --border-color: #E0E5E9;
+  --btn-radius: 0.5rem;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: var(--warm-bg);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom scrollbar for admin and modals */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f3f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3a16a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a98250;
+}

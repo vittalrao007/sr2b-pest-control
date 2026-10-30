@@ -1,0 +1,594 @@
+{
+  "business": {
+    "name": "SR2B Pest Control",
+    "shortName": "SR2B",
+    "tagline": "Professional Pest Control & Hygiene Solutions",
+    "description": "Providing comprehensive, safe, and effective pest management for homes, commercial establishments, and industrial premises across India.",
+    "primaryCity": "Bangalore",
+    "state": "Karnataka",
+    "country": "India",
+    "address": "No. 41/8, Sri Rachna, 1st Floor, 5th Cross, Krishna Layout, Hulimavu, Bangalore - 560076",
+    "postalCode": "560076",
+    "email": "xxxxx@email.com",
+    "primaryPhone": "+91 63629 53619",
+    "secondaryPhone": "",
+    "whatsappNumber": "916362953619",
+    "businessHours": "Monday – Saturday: 8:00 AM – 7:30 PM | Sunday: By Appointment",
+    "googleMapsUrl": "",
+    "googleBusinessProfileUrl": "",
+    "licenseNumber": "LLPIN: ADC-5497"
+  },
+  "branding": {
+    "primaryNavy": "#183247",
+    "deepNavy": "#102332",
+    "bronze": "#A98250",
+    "lightBronze": "#C3A16A",
+    "warmBg": "#F8F6F1",
+    "textMain": "#263442",
+    "textMuted": "#66727D",
+    "successGreen": "#218653",
+    "borderColor": "#E0E5E9",
+    "logoUrl": "/assets/sr2b-logo.svg",
+    "faviconUrl": "/assets/sr2b-icon.svg",
+    "fontFamily": "Inter",
+    "borderRadius": "0.5rem"
+  },
+  "homepage": {
+    "announcement": {
+      "enabled": true,
+      "text": "Professional, safe pest management tailored for residential homes and commercial establishments.",
+      "linkText": "Schedule Inspection",
+      "linkUrl": "/contact",
+      "showPhone": true,
+      "emergencyNote": "Rapid response for urgent infestations"
+    },
+    "hero": {
+      "eyebrow": "Certified Pest Management Professionals",
+      "headline": "Reliable Pest Control for a Cleaner, Safer Space",
+      "description": "Customized pest control solutions with targeted treatment protocols, government-approved formulations, and comprehensive aftercare.",
+      "primaryCtaText": "Get a Free Quote",
+      "primaryCtaLink": "/contact",
+      "secondaryCtaText": "Call Us Now",
+      "secondaryCtaLink": "tel:+916362953619",
+      "imageUrl": "/src/assets/images/hero_pest_technician_1793023757861.jpg",
+      "showCard": true,
+      "cardTitle": "100% Odorless & Safe Options",
+      "cardSubtitle": "Targeted gel & spray treatments for children and pet-friendly households."
+    },
+    "aboutHeading": "Your Trusted Partner in Pest Management",
+    "aboutDescription": "At SR2B Pest Control, we bring systematic inspection, scientific methodology, and disciplined application to eliminate pest infestations at the root cause.",
+    "aboutMission": "Our mission is to safeguard residential homes and commercial workplaces against invasive pests using responsible chemicals, modern inspection tools, and sustainable prevention strategies.",
+    "whyChooseHeading": "Why Choose SR2B Pest Control?",
+    "whyChooseDescription": "Pest management requires careful diagnosis, correct dosage, and strict hygiene protocols. Here is how we deliver reliable outcomes for every client.",
+    "whyPoints": [
+      {
+        "title": "Thorough Pre-Treatment Inspection",
+        "desc": "We do not simply spray and leave; we trace entry points, nesting zones, and moisture pockets to solve the root problem."
+      },
+      {
+        "title": "Government-Approved Formulations",
+        "desc": "We prioritize low-toxicity, odorless, and family-safe active ingredients certified by the Central Insecticides Board (CIB)."
+      },
+      {
+        "title": "Customized Residential & Commercial Plans",
+        "desc": "Single service interventions, annual maintenance contracts (AMC), or scheduled corporate audits based on property requirements."
+      },
+      {
+        "title": "Clear Follow-Up & Prevention Guidance",
+        "desc": "Every service concludes with actionable hygiene and structural recommendations to minimize re-infestation risks."
+      }
+    ],
+    "residentialHeading": "Complete Home & Apartment Protection",
+    "residentialDescription": "From kitchen cockroach eradication to bedroom bed bug elimination and sub-floor termite protection, we protect your family with minimal disruption to your routine.",
+    "residentialPoints": [
+      "Kitchen cabinet odorless herbal/synthetic gel baiting",
+      "Bedroom mattress and furniture bed bug heat & contact treatment",
+      "Child and pet safe formulations with zero unpleasant residue",
+      "Drain & utility line mosquito & fly barrier treatments"
+    ],
+    "commercialHeading": "Commercial & Corporate Pest Compliance",
+    "commercialDescription": "Hygiene and regulatory compliance are essential for restaurants, cloud kitchens, corporate offices, warehouses, and hospitality venues.",
+    "commercialPoints": [
+      "Food safety & FSSAI hygiene audit compliant pest documentation",
+      "Discreet after-hours or weekend service schedules",
+      "Rodent bait station monitoring & fly management systems",
+      "Multi-site contract management with dedicated reporting"
+    ],
+    "finalCtaHeading": "Ready to Take Control of Your Pest Problem?",
+    "finalCtaDescription": "Speak with our technical team today. Tell us what pests you are seeing and we will recommend the right targeted treatment plan.",
+    "finalCtaButtonText": "Request a Free Quotation",
+    "sectionVisibility": {
+      "announcementBar": true,
+      "trustStrip": true,
+      "aboutSection": true,
+      "servicesGrid": true,
+      "whyChooseUs": true,
+      "processSection": true,
+      "residentialPromo": true,
+      "commercialPromo": true,
+      "serviceAreasSection": false,
+      "testimonialsSection": true,
+      "faqSection": true,
+      "finalCtaBanner": true,
+      "stickyMobileBar": true
+    }
+  },
+  "benefits": [
+    {
+      "id": "b1",
+      "title": "Certified Technicians",
+      "description": "Trained in safe application, pest biology, and regulatory guidelines.",
+      "iconName": "ShieldCheck"
+    },
+    {
+      "id": "b2",
+      "title": "Targeted Treatment Plans",
+      "description": "Customized solutions based on your specific property and infestation severity.",
+      "iconName": "Crosshair"
+    },
+    {
+      "id": "b3",
+      "title": "Safe Formulations",
+      "description": "Using odorless, government-approved chemicals with minimal downtime.",
+      "iconName": "Leaf"
+    },
+    {
+      "id": "b4",
+      "title": "Prevention-Focused Approach",
+      "description": "Root cause eradication combined with long-term barrier protection.",
+      "iconName": "CheckCircle2"
+    }
+  ],
+  "processSteps": [
+    {
+      "stepNumber": 1,
+      "title": "Describe Your Problem",
+      "description": "Contact us via phone, WhatsApp, or our quote form with details of the pest activity you noticed.",
+      "iconName": "MessageSquareText"
+    },
+    {
+      "stepNumber": 2,
+      "title": "Property Inspection",
+      "description": "Our specialist inspects nesting areas, entry cracks, moisture zones, and risk factors.",
+      "iconName": "Search"
+    },
+    {
+      "stepNumber": 3,
+      "title": "Targeted Treatment",
+      "description": "We apply precise gel baiting, residual spray, or barrier protection following safety protocols.",
+      "iconName": "SprayCan"
+    },
+    {
+      "stepNumber": 4,
+      "title": "Prevention & Follow-up",
+      "description": "Receive aftercare guidance and scheduled follow-up visits to guarantee lasting relief.",
+      "iconName": "ShieldAlert"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-1",
+      "slug": "cockroach-control",
+      "name": "Cockroach Control",
+      "shortDescription": "Advanced gel baiting and residual treatment for kitchens, pantries, and washrooms with zero need to empty utensils.",
+      "fullDescription": "German and American cockroaches are vectors of foodborne pathogens and allergens. Our cockroach management program uses micro-dot gel bait technology combined with insect growth regulators (IGR) that wipe out entire colonies in cabinets, sinks, and drains without unpleasant odors.",
+      "imageUrl": "/src/assets/images/residential_home_treatment_1793023758657.jpg",
+      "iconName": "Bug",
+      "badge": "Most Popular",
+      "featured": true,
+      "published": true,
+      "sortOrder": 1,
+      "category": "both",
+      "commonSigns": [
+        "Small dark droppings resembling ground pepper in drawers",
+        "Unusual musty or oily odor around sink areas",
+        "Egg capsules (ootheca) behind appliances or in cabinet hinges",
+        "Cockroaches scurrying when lights are switched on at night"
+      ],
+      "treatmentSteps": [
+        "Inspection of food prep areas, plumbing voids, and warm motor housings",
+        "Application of odorless Fipronil/Imidacloprid gel bait in hidden spots",
+        "Residual spray treatment along floor-wall skirting and drainage outlets",
+        "Gel replenishment and monitoring trap placement"
+      ],
+      "preventionTips": [
+        "Wipe down kitchen countertops every night and store open snacks in airtight containers",
+        "Fix leaky faucets and keep under-sink pipes dry",
+        "Dispose of trash daily in tightly lidded bins"
+      ],
+      "faqs": [
+        {
+          "question": "Do I need to empty my kitchen utensils before cockroach treatment?",
+          "answer": "For our standard odorless gel baiting, you do not need to empty kitchen cabinets. If a complementary perimeter spray is necessary, our technician will advise you on covering sensitive food items."
+        },
+        {
+          "question": "How quickly does the gel bait take effect?",
+          "answer": "Cockroaches feed on the bait and share it with colony members in nesting crevices. You will see a significant drop within 48 to 72 hours, with full eradication within 10 to 14 days."
+        }
+      ],
+      "seoTitle": "Professional Cockroach Control Services | SR2B Pest Control",
+      "seoDescription": "Odorless cockroach gel baiting & extermination for homes and restaurants. Clean, safe, and effective."
+    },
+    {
+      "id": "srv-2",
+      "slug": "termite-control",
+      "name": "Termite Control & Wood Protection",
+      "shortDescription": "Pre-construction and post-construction drill-fill-seal subterranean termite barrier treatment with multi-year warranty.",
+      "fullDescription": "Subterranean termites cause billions in structural damage by eating cellulose inside wooden doors, wardrobes, skirting, and foundations. We use specialized drilling and pressure chemical injection creating an impenetrable barrier that destroys termite colonies.",
+      "imageUrl": "/src/assets/images/termite_inspection_specialist_1793023759661.jpg",
+      "iconName": "ShieldAlert",
+      "badge": "Structural Protection",
+      "featured": true,
+      "published": true,
+      "sortOrder": 2,
+      "category": "both",
+      "commonSigns": [
+        "Mud tubes along foundation walls, baseboards, or brickwork",
+        "Hollow-sounding woodwork when tapped",
+        "Discarded wings near window sills and doors after monsoon rains",
+        "Blistered or peeling paint resembling water damage"
+      ],
+      "treatmentSteps": [
+        "Acoustic and visual inspection of woodwork and masonry joints",
+        "Precision drilling at 1-foot intervals along skirting and door frames",
+        "High-pressure chemical barrier injection with Termiticide",
+        "Color-matched sealing of drill holes to preserve aesthetic finishes"
+      ],
+      "preventionTips": [
+        "Eliminate moisture leaks around wooden frames and bathroom adjacencies",
+        "Avoid stacking firewood or scrap timber against perimeter walls",
+        "Conduct a professional termite check before undertaking major interior carpentry"
+      ],
+      "faqs": [
+        {
+          "question": "Does the drilling damage our flooring or wooden fixtures?",
+          "answer": "Our technicians use micro-drill bits and seal every hole with color-matched wax or cement compound, ensuring your tiles and woodwork remain neat and unobtrusive."
+        }
+      ],
+      "seoTitle": "Anti-Termite Treatment & Inspection | SR2B Pest Control",
+      "seoDescription": "Pre and post-construction termite drilling and chemical barrier protection. Protect your furniture and structural woodwork."
+    },
+    {
+      "id": "srv-3",
+      "slug": "bed-bug-treatment",
+      "name": "Bed Bug Extermination",
+      "shortDescription": "Specialized 2-round contact and residual treatment targeting mattresses, bed frames, and sofa seams for peaceful sleep.",
+      "fullDescription": "Bed bugs hide deep in seams, electrical switch plates, and headboards, feeding nocturnally. Our intensive 2-visit eradication protocol eliminates both living bugs and newly hatched nymphs.",
+      "imageUrl": "/src/assets/images/residential_home_treatment_1793023758657.jpg",
+      "iconName": "Sparkles",
+      "badge": "High Precision",
+      "featured": true,
+      "published": true,
+      "sortOrder": 3,
+      "category": "both",
+      "commonSigns": [
+        "Itchy linear bite marks appearing in the morning on arms, shoulders, or neck",
+        "Rust-colored blood spots or dark fecal specks on bedsheets and mattresses",
+        "Shed insect skins in bed frame crevices or behind headboards"
+      ],
+      "treatmentSteps": [
+        "Detailed inspection of mattress tufts, headboard joints, and upholstery folds",
+        "Direct contact insecticide application to harborage zones",
+        "Residual crack and crevice misting along bedroom perimeter",
+        "Scheduled second treatment 12-15 days later to eliminate newly hatched eggs"
+      ],
+      "preventionTips": [
+        "Wash infested bedding in hot water (above 60°C)",
+        "Inspect luggage thoroughly upon returning from hotel stays",
+        "Vacuum mattresses and bed frames regularly using high-suction equipment"
+      ],
+      "faqs": [
+        {
+          "question": "Why do you recommend a 2-visit treatment for bed bugs?",
+          "answer": "Most standard insecticide treatments cannot penetrate bed bug egg shells. The second visit (scheduled approximately 14 days later) ensures any newly hatched nymphs are eradicated before they reach reproductive maturity."
+        }
+      ],
+      "seoTitle": "Bed Bug Treatment & Eradication | SR2B Pest Control",
+      "seoDescription": "Complete 2-visit bed bug control for homes, guest houses, and hostels. Guaranteed peace of mind."
+    },
+    {
+      "id": "srv-4",
+      "slug": "rodent-control",
+      "name": "Rodent & Rat Management",
+      "shortDescription": "Tamper-proof bait stations, glue boards, and structural proofing for homes, warehouses, and commercial kitchens.",
+      "fullDescription": "Rats and mice chew through electrical cabling, spoil stored food, and spread leptospirosis. We employ multi-catch traps, tamper-evident bait boxes, and exclusion recommendations.",
+      "imageUrl": "/src/assets/images/commercial_pest_inspection_1793023759212.jpg",
+      "iconName": "AlertTriangle",
+      "badge": "Heavy Duty",
+      "featured": true,
+      "published": true,
+      "sortOrder": 4,
+      "category": "both",
+      "commonSigns": [
+        "Dark cylindrical droppings near food storage or along walls",
+        "Gnaw marks on plastic containers, wires, and wooden door bottoms",
+        "Scratching noises in false ceilings or wall cavities at night"
+      ],
+      "treatmentSteps": [
+        "Identification of rodent runways and exterior ingress gaps",
+        "Deployment of tamper-resistant anticoagulant bait stations",
+        "Placement of heavy-duty adhesive capture boards in strategic travel lanes",
+        "Identification of entry holes exceeding 6mm for structural proofing"
+      ],
+      "preventionTips": [
+        "Seal pipe openings and gaps beneath exterior doors with wire mesh or metal sweeps",
+        "Keep dry food in glass, metal, or heavy plastic containers"
+      ],
+      "faqs": [
+        {
+          "question": "Are the rodent bait stations safe if I have pets or young children?",
+          "answer": "Yes, we use key-locked, tamper-proof bait boxes designed specifically to prevent pets and children from accessing the rodent bait inside."
+        }
+      ],
+      "seoTitle": "Rodent & Rat Control Management | SR2B Pest Control",
+      "seoDescription": "Effective rodent trapping and proofing for residential buildings, warehouses, and restaurants."
+    },
+    {
+      "id": "srv-5",
+      "slug": "ant-control",
+      "name": "Ant Management & Nest Eradication",
+      "shortDescription": "Bait attractants and barrier sprays to eliminate red ants, carpenter ants, and sugar ants at the colony source.",
+      "fullDescription": "Surface spraying only kills worker ants while the queen continually replenishes the colony. Our ant control system utilizes slow-acting liquid and granular baits that workers carry back to the queen.",
+      "imageUrl": "/src/assets/images/residential_home_treatment_1793023758657.jpg",
+      "iconName": "Shield",
+      "featured": false,
+      "published": true,
+      "sortOrder": 5,
+      "category": "both",
+      "commonSigns": [
+        "Continuous lines of worker ants trailing across kitchen counters or balconies",
+        "Small mounds of excavated dirt or sawdust near foundation cracks"
+      ],
+      "treatmentSteps": [
+        "Identification of ant species (sugar ants, crazy ants, red imported fire ants)",
+        "Strategic placement of sweet and protein-based gel bait lines",
+        "Exterior barrier spraying around foundation perimeter"
+      ],
+      "preventionTips": [
+        "Clean up sugar and honey spills immediately",
+        "Trim tree branches that touch rooflines or exterior windows"
+      ],
+      "faqs": [],
+      "seoTitle": "Ant Control Services | SR2B Pest Control",
+      "seoDescription": "Safe, long-lasting ant colony extermination for homes and commercial establishments."
+    },
+    {
+      "id": "srv-6",
+      "slug": "mosquito-control",
+      "name": "Mosquito & Fly Management",
+      "shortDescription": "Thermal fogging, cold ULV misting, and anti-larval treatment for societies, gardens, and commercial premises.",
+      "fullDescription": "Mosquitoes are vectors of dengue, malaria, and chikungunya. Our comprehensive mosquito program addresses both adult resting populations and stagnant breeding grounds.",
+      "imageUrl": "/src/assets/images/hero_pest_technician_1793023757861.jpg",
+      "iconName": "Wind",
+      "featured": false,
+      "published": true,
+      "sortOrder": 6,
+      "category": "both",
+      "commonSigns": [
+        "High swarms of adult mosquitoes at dawn and dusk around foliage",
+        "Wrigglers (larvae) visible in water collection trays or open drains"
+      ],
+      "treatmentSteps": [
+        "Biological anti-larval treatment in standing water bodies and drains",
+        "Indoor cold misting with pyrethroid compounds on dark resting surfaces",
+        "Compound thermal fogging for rapid knockdown of adult mosquitoes"
+      ],
+      "preventionTips": [
+        "Empty flower pot drip trays, coolers, and buckets at least once weekly",
+        "Keep window screens intact and closed during evening hours"
+      ],
+      "faqs": [],
+      "seoTitle": "Mosquito Control & Thermal Fogging | SR2B Pest Control",
+      "seoDescription": "Anti-larval treatments and compound fogging to protect residential societies and commercial facilities."
+    },
+    {
+      "id": "srv-7",
+      "slug": "wood-borer-treatment",
+      "name": "Wood Borer Treatment & Timber Preservation",
+      "shortDescription": "Specialized syringe micro-injection and deep timber preservative treatment targeting powder-post beetles and larvae.",
+      "fullDescription": "Wood borers and powder-post beetles infest seasoned and unseasoned timber, boring destructive tunnels inside wooden furniture, wardrobes, plywood cabinets, and door frames while leaving behind powdery frass. Our treatment utilizes targeted high-penetration chemical syringe injection directly into active flight pinholes, accompanied by broad-spectrum surface oil misting to destroy larvae and prevent adult emergence.",
+      "imageUrl": "/src/assets/images/wood_borer_treatment_1793283301269.jpg",
+      "iconName": "Hammer",
+      "badge": "Timber Protection",
+      "featured": true,
+      "published": true,
+      "sortOrder": 7,
+      "category": "both",
+      "commonSigns": [
+        "Fine yellowish powdery dust (frass) accumulating beneath wooden furniture and cabinets",
+        "Tiny round pinholes (1mm to 2mm in diameter) on plywood surfaces and timber frames",
+        "Weakened, hollowed-out furniture panels or peeling veneer",
+        "Small adult beetles observed near light sources or window ledges in the evening"
+      ],
+      "treatmentSteps": [
+        "Detailed acoustic and visual inspection of all timber fixtures and plywood structures",
+        "Precision syringe micro-injection of oil-based systemic preservative into individual flight holes",
+        "Surface application of residual protective coats to eliminate emerging adult beetles",
+        "Color-matched sealing of exit holes and scheduled monitoring assessment"
+      ],
+      "preventionTips": [
+        "Ensure new plywood and timber are kiln-seasoned and chemically treated before interior carpentry",
+        "Avoid prolonged moisture exposure and fix water seepages near wooden cabinetry",
+        "Apply protective polish, varnish, or polyurethane coats to raw exposed wood surfaces"
+      ],
+      "faqs": [
+        {
+          "question": "How is wood borer damage different from termite infestation?",
+          "answer": "Termites construct visible mud tunnels along surfaces and consume wood from the interior with damp mud residue. Wood borers do not build mud tunnels; instead, their larvae bore tiny exit pinholes and leave behind very fine powder (frass) beneath the wood."
+        },
+        {
+          "question": "Will the syringe treatment leave ugly stains on luxury furniture?",
+          "answer": "No. Our certified technicians use ultra-fine syringes to inject preservative solution directly into existing holes created by the beetles, followed by clean wiping and color-matched sealing to protect aesthetics."
+        }
+      ],
+      "seoTitle": "Wood Borer Treatment & Furniture Protection | SR2B Pest Control",
+      "seoDescription": "Specialized syringe injection and timber preservation against powder-post beetles. Protect your valuable furniture and woodwork."
+    },
+    {
+      "id": "srv-8",
+      "slug": "lizard-control",
+      "name": "Lizard Control & Exclusion Management",
+      "shortDescription": "Eco-safe repellent barriers, insect food-source eradication, and perimeter exclusion to keep walls and ceilings lizard-free.",
+      "fullDescription": "House lizards and wall geckos invade residential and commercial premises in search of lights, warmth, and insect prey such as moths, mosquitoes, and flies. Our professional lizard management program applies non-lethal, eco-safe sensory repellent formulations along wall-ceiling junctions, behind valances, and around entry fixtures, combined with comprehensive insect suppression to humanely force lizards out and prevent their return.",
+      "imageUrl": "/src/assets/images/lizard_control_treatment_1793283301214.jpg",
+      "iconName": "ShieldCheck",
+      "badge": "Eco-Safe Repellent",
+      "featured": true,
+      "published": true,
+      "sortOrder": 8,
+      "category": "both",
+      "commonSigns": [
+        "Dark droppings with distinct white calcified tips on window sills, floors, or counters",
+        "Lizards crawling across ceilings, walls, or darting behind wall frames, mirrors, and AC units",
+        "Lizard egg clutches (small, chalky-white spheres) hidden in dark cupboards or electrical meter boxes",
+        "Unsanitary sightings and contamination concerns in kitchens or food prep areas"
+      ],
+      "treatmentSteps": [
+        "Thorough inspection of entry crevices, window gaps, vents, and lighting zones",
+        "Application of odorless, low-toxicity repellent barriers along wall-ceiling junctions and hiding spots",
+        "Targeted elimination of light-attracted flying insects and spiders to cut off lizard food supply",
+        "Structural exclusion advisory for sealing open ventilators, pipes, and utility entries"
+      ],
+      "preventionTips": [
+        "Keep window mesh screens shut during dusk and evening hours",
+        "Switch off unnecessary outdoor lights near entryways that attract insect prey",
+        "Seal cracks around air-conditioner piping, exhaust vents, and window frames"
+      ],
+      "faqs": [
+        {
+          "question": "Is the lizard repellent spray safe for children and domestic pets?",
+          "answer": "Yes. We utilize government-approved, low-toxicity, odorless repellent formulations and botanical compounds designed to deter reptiles without presenting hazards to pets or family members."
+        },
+        {
+          "question": "Does the treatment kill lizards indoors?",
+          "answer": "No, our protocol is designed to be humane and sanitary. It irritates the sensory receptors of the lizards and removes their food supply (flying insects), driving them to vacate the premises rather than dying inside hidden wall voids."
+        }
+      ],
+      "seoTitle": "Lizard Control & Wall Gecko Exclusion | SR2B Pest Control",
+      "seoDescription": "Safe, odorless lizard repellent treatments and perimeter exclusion for homes, offices, and commercial establishments."
+    }
+  ],
+  "serviceAreas": [],
+  "pricing": {
+    "showPublicPricing": false,
+    "currencySymbol": "₹",
+    "currencyCode": "INR",
+    "disclaimer": "Customized upfront quotations provided following professional on-site property inspection based on area dimensions, infestation severity, and treatment protocols.",
+    "offers": [
+      {
+        "id": "offer-1",
+        "title": "Complete Annual Home Shield (AMC)",
+        "discountNote": "Complimentary Inspection",
+        "description": "Comprehensive property pest audit with customized scheduled treatments and priority emergency callouts.",
+        "validTill": "Limited Season Offer",
+        "published": true
+      },
+      {
+        "id": "offer-2",
+        "title": "Commercial Restaurant Hygiene Package",
+        "discountNote": "Free Initial Site Survey",
+        "description": "Comprehensive pest audit with customized monthly service plan and FSSAI audit support documentation.",
+        "published": true
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": "test-1",
+      "customerName": "K. Venkateshwar Rao",
+      "location": "Koramangala, Bangalore",
+      "serviceCategory": "Termite Control & Wood Protection",
+      "rating": 5,
+      "reviewText": "We noticed termite mud tubes behind our wooden showcase. SR2B team arrived punctually with non-invasive thermal tools, drilled neatly along the skirting, and sealed every hole cleanly. No smell and no damage to our marble flooring.",
+      "date": "October 2026",
+      "published": true,
+      "verified": true
+    },
+    {
+      "id": "test-2",
+      "customerName": "Ananya Deshmukh",
+      "location": "Indiranagar, Bangalore",
+      "serviceCategory": "Cockroach Gel Treatment",
+      "rating": 5,
+      "reviewText": "Having toddlers at home, I was anxious about chemical sprays. SR2B applied odorless herbal and gel bait in kitchen cabinet corners without asking us to empty single pot. Within 3 days, cockroaches completely disappeared.",
+      "date": "September 2026",
+      "published": true,
+      "verified": true
+    },
+    {
+      "id": "test-3",
+      "customerName": "Rajesh Sharma (Cloud Kitchen Ops)",
+      "location": "Hulimavu, Bangalore",
+      "serviceCategory": "Commercial Pest Management",
+      "rating": 5,
+      "reviewText": "SR2B manages pest control across our three restaurant kitchens. Their technicians work late nights after our closing hours, maintain proper service logbooks, and keep us 100% compliant with hygiene audits.",
+      "date": "August 2026",
+      "published": true,
+      "verified": true
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "Which pests do you treat?",
+      "answer": "SR2B Pest Control provides targeted treatments for German & American cockroaches, subterranean termites, bed bugs, rodents (rats and mice), ants, mosquitoes, spiders, silverfish, and wood borers.",
+      "category": "general",
+      "published": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "faq-2",
+      "question": "Do we need to vacate the house during treatment?",
+      "answer": "For our standard cockroach gel treatments, you do NOT need to leave your home at all. For specialized treatments such as bed bug residual misting or outdoor mosquito fogging, we recommend staying out of treated rooms for 2 to 3 hours until surfaces dry completely.",
+      "category": "treatment",
+      "published": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "faq-3",
+      "question": "Are your treatment chemicals safe for pets and children?",
+      "answer": "Yes. We prioritize low-toxicity, odorless, Central Insecticides Board (CIB) approved synthetic pyrethroids and targeted gel baits. The baits are applied in concealed hinges and micro-droplets inaccessible to pets and children.",
+      "category": "treatment",
+      "published": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "faq-4",
+      "question": "How do I request a free quote or inspection?",
+      "answer": "You can submit the online quote form on our Contact page, message us directly via WhatsApp with photos or description of the issue, or call our customer service number.",
+      "category": "general",
+      "published": true,
+      "sortOrder": 4
+    },
+    {
+      "id": "faq-5",
+      "question": "Do you offer warranty or follow-up service?",
+      "answer": "Yes! Our termite treatments carry multi-year service warranties, bed bug treatments include a mandatory 14-day second visit, and our Annual Maintenance Contracts (AMC) include free intermediate call-outs whenever pest activity is detected.",
+      "category": "general",
+      "published": true,
+      "sortOrder": 5
+    },
+    {
+      "id": "faq-6",
+      "question": "What preparation is required before your technician arrives?",
+      "answer": "For cockroach gel treatments, simply ensure kitchen counters are wiped clean of open food grease. For bed bug visits, strip bedsheets and wash them in hot water. Our technician will contact you prior to arrival with any specific instructions.",
+      "category": "treatment",
+      "published": true,
+      "sortOrder": 6
+    }
+  ],
+  "social": {
+    "whatsapp": "916362953619",
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com",
+    "linkedin": "https://linkedin.com"
+  },
+  "seo": {
+    "metaTitle": "SR2B Pest Control — Certified Pest Management in India",
+    "metaDescription": "Trusted, safe, and odorless pest management for residences, restaurants, and corporate facilities. Termite, cockroach, rodent, and bed bug eradication.",
+    "ogImage": "/src/assets/images/hero_pest_technician_1793023757861.jpg",
+    "canonicalUrl": "https://sr2bpestcontrol.com",
+    "enableRobotsIndexing": true
+  },
+  "updatedAt": "2026-10-29T13:47:17.005Z"
+}

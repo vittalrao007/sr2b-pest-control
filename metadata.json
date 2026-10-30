@@ -1,0 +1,6 @@
+{
+  "name": "SR2B Pest Control",
+  "description": "Professional, reliable pest management solutions for residential and commercial spaces in India with customizable business management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
